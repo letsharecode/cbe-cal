@@ -1,0 +1,46 @@
+<head>
+  <title>incidence reporting</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        {{> modal}}
+      </div>
+    </div>
+  </nav>
+
+  <div class="map-container">
+    {{> googleMap name="map" options=mapOptions}}
+
+  </div>
+</body>
+
+<template name="modal">
+  <button type="button" class="btn btn-primary btn-navbar" data-toggle="modal" data-target="#modalWindow">File Report</button>
+  <div id="modalWindow" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div id="modal-content" class="modal-content">
+      <div class="modal-header"><h4 class="modal-title" id="myModalLabel">Log Sheet</h4></div>
+      <div class="modal-body">
+        <input class="form-control" type="name" name="name" placeholder="Pollution">
+        <input class="form-control" type="name" name="name" placeholder="Evidence">
+        <select class="form-control">
+          <option>What type of complain is it?</option>
+          <option>Foul Smell</option>
+          <option>Rotten Eggs</option>
+          <option>Burning Plastic</option>
+        </select>
+        <input class="form-control" type="location" name="location" placeholder="Location">
+        <p>...</p>
+        <p>end</p>
+        <textarea class="form-control tetra-area" placeholder="Additional comments..."></textarea>
+      </div>
+      <div class="modal-footer"></div>
+        <div class="btn-group">
+          <button class="btn btn-primary btn-footer" type="button" data-dismiss="modal" >Submit</button>
+          <button class="btn btn-default btn-footer" type="button" data-dismiss="modal" >Cancel</button>
+        </div>
+    </div>
+  </div>
+</template>
