@@ -5,9 +5,22 @@
     "start": "meteor run"
   },
   "dependencies": {
-    "babel-runtime": "^6.20.0",
+    "babel-runtime": "^6.23.0",
     "meteor-node-stubs": "~0.2.4",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
-  }
+  },
+  "description": "Automating the reporting of incidences of pollution in Oakland",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letsharecode/cbe-cal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/letsharecode/cbe-cal/issues"
+  },
+  "homepage": "https://github.com/letsharecode/cbe-cal#readme"
 }
